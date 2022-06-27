@@ -21,3 +21,5 @@
 3. The [3-twofiles](3-twofiles) file is a script that displays the content of /etc/passwd and /etc/hosts when executed
 
 4. The [4-lastlines](4-lastlines) file is a script that displays the last ten lines of /etc/passwd
+
+5. The [5-firstlines](5-firstlines) file is a script that displays the first ten lines of /etc/passwd when executed
