@@ -37,3 +37,5 @@
 11. The [11-directories](11-directories) is a script that counts the number of directories and sub-directories in the current directory.
 
 12. The [12-newest_files](12-newest_files) is a script that diplay the 10.newest file in the working directory
+
+13. The [13-unique](13-unique) is a script that print unique words from a lists of directories
