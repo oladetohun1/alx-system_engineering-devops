@@ -17,3 +17,7 @@
 1. The [1-confused_smiley](./1-confused_smiley) file is a script that displaya a confused smiley face fer being executed.
 
 2. The [2-hellofile](2-hellofile) file is a script displays the content of /etc/passwd when executed
+
+3. The [3-twofiles](3-twofiles) file is a script that displays the content of /etc/passwd and /etc/hosts when executed
+
+4. The [4-lastlines](4-lastlines) file is a script that displays the last ten lines of /etc/passwd
