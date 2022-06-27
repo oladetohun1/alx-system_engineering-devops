@@ -10,5 +10,10 @@
 
 - How to combine commands and filters with redirections
 <hr />
+<ol>
 
 The[0-hello_world](./0-hello_world)file is a script that prints "Hello, World" followed by a new line to the standard output.
+
+The [1-confused_smiley](./1-confused_smiley) files is script that displaya a confused smiley face fer being executed.
+
+</ol>
