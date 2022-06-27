@@ -9,3 +9,5 @@
 - How to send the output from one program to the input of another program
 
 - How to combine commands and filters with redirections
+<hr />
+The [0-hello_world](./0-hello_world) file is a script that prints "Hello, World" followed by a new line to the standard output.
