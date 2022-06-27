@@ -26,3 +26,11 @@
 
 6. The [6-third_line](6-third_line) file is a script that dsplays the thrd line of the file iacta
 
+7. The [7-file](7-file) is a script that writes into a file
+
+8. The [8-cwd_state](8-cwd_state) is a script that the result of command ls -la into ls_cwd_content
+
+9. The [9-duplicate_last_line](9-duplicate_last_line) is a script that duplicates the last line of the file iacta
+
+10. The [10-no_more_js](10-no_more_js) is a script that deletes all the regular files with .js
+
