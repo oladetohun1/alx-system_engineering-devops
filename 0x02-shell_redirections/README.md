@@ -23,3 +23,6 @@
 4. The [4-lastlines](4-lastlines) file is a script that displays the last ten lines of /etc/passwd
 
 5. The [5-firstlines](5-firstlines) file is a script that displays the first ten lines of /etc/passwd when executed
+
+6. The [6-third_line](6-third_line) file is a script that dsplays the thrd line of the file iacta
+
