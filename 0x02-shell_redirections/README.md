@@ -34,3 +34,5 @@
 
 10. The [10-no_more_js](10-no_more_js) is a script that deletes all the regular files with .js
 
+11. The [11-directories](11-directories) is a script that counts the number of directories and sub-directories in the current directory.
+
