@@ -14,5 +14,6 @@
 
 0. The [0-hello_world](./0-hello_world) file is a script that prints "Hello, World" followed by a new line to the standard output.
 
-1. The [1-confused_smiley](./1-confused_smiley) files is script that displaya a confused smiley face fer being executed.
-`
+1. The [1-confused_smiley](./1-confused_smiley) file is a script that displaya a confused smiley face fer being executed.
+
+2. The [2-hellofile](2-hellofile) file is a script displays the content of /etc/passwd when executed
