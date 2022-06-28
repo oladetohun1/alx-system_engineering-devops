@@ -39,3 +39,32 @@
 12. The [12-newest_files](12-newest_files) is a script that diplay the 10.newest file in the working directory
 
 13. The [13-unique](13-unique) is a script that print unique words from a lists of directories
+
+14. The [14-findthatword](14-findthatword) is a script that displays lines containing root from the file /etc/paswd
+
+15. The [15-countthatword](15-countthatword) is a script that display the number of lines that contains the pattern /etc/passwd
+
+16. The [16-whatsnext](16-whatsnext) is a script that display the line containing root and 3 lines aftter them in the fle /etc/passwd
+
+17. The [17-hidethisword](17-hidethisword)is a script that Display all the lines in the file /etc/passwd that do not contain the pattern “bin”
+
+18. The [18-letteronly](18-letteronly) is a script that Display all lines of the file /etc/ssh/sshd_config starting with a letter
+
+19. The [19-AZ](19-AZ) is a script that Replace all characters A and c from input to Z and e respectively
+
+20. The [20-hiago](20-hiago) is a script that Create a script that removes all letters c and C from input
+
+21. The [21-reverse](21-reverse) is a script that Write a script that reverse its input.
+
+22. The [22-users_and_homes](22-users_and_homes) is a script that displays all users and their home directories, sorted by users0
+
+23. The [100-empty_casks](100-empty_casks) is a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+
+24. The [101-gifs](101-gifs) is a script that lists all the files with a .gif extension in the current directory and all its sub-directories
+
+25. The [102-acrostic](102-acrostic) is a script decodes acrostics that use the first letter of each line
+
+26. The [103-the_biggest_fan](103-the_biggest_fan) is a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests
+
+
+<hr />
