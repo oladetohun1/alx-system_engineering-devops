@@ -1,4 +1,6 @@
-![No place like home] (https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/285/s7kpNYq.png)
+
+![No place like home](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/285/s7kpNYq.png)
+
 ---
 
 # At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
