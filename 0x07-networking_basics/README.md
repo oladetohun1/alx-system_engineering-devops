@@ -4,10 +4,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 # OSI Model
 
-
-		- What it is
-		- How many layers it has
-		- How it is organized
+	  - What it is
+	  - How many layers it has
+	  - How it is organized
 ---
 # What is a LAN
 	- Typical usage
