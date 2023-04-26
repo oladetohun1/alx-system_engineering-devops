@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -y nginx
 
 # Create a custom configuration file for the redirection to prevent loss of data
-sudo sh -c "cat > /etc/nginx/conf.d/redirect.conf << EOL
+sudo sed -i "cat > /etc/nginx/conf.d/redirect.conf << EOL
 server {
     listen 80;
     server_name localhost;
@@ -20,6 +20,3 @@ EOL"
 
 # Reload Nginx configuration to apply changes
 sudo service nginx reload
-
-# Verify the redirection
-curl -sI http://localhost/redirect_me/
