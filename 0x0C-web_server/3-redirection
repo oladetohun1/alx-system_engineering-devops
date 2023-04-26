@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 # Redirect to another page
-# The redirection must be a “301 Moved Permanently
+# The redirection must be a "301 Moved Permanently"
 
 # Install Nginx web server
 sudo apt-get update
 sudo apt-get install -y nginx
 
+# Create a backup of the default Nginx configuration
+sudo cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/default.bak
+
 # Create a custom configuration file for the redirection to prevent loss of data
-sudo sed -i "cat > /etc/nginx/conf.d/redirect.conf << EOL
+sudo sh -c "cat > /etc/nginx/sites-available/redirect << EOL
 server {
     listen 80;
     server_name localhost;
@@ -18,5 +21,14 @@ server {
 }
 EOL"
 
+# Create a symbolic link to enable the site
+sudo ln -s /etc/nginx/sites-available/redirect /etc/nginx/sites-enabled/
+
+# Remove the default Nginx configuration
+sudo rm /etc/nginx/sites-enabled/default
+
 # Reload Nginx configuration to apply changes
 sudo service nginx reload
+
+# Verify the redirection
+curl -sI http://localhost/redirect_me/
