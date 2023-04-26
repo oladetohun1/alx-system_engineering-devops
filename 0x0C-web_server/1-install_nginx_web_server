@@ -13,6 +13,6 @@ sudo sed -i 's/.*listen 80 default_server;/listen 80 default_server;/' /etc/ngin
 sudo service nginx restart
 
 # Create a custom HTML file with "Hello World!" content
-echo "Hello World!" | sudo tee /var/www/html/index.html > /dev/null
+echo "Hello World!" | sudo tee /var/www/html/index.html
 
 echo "Nginx installed and configured successfully."
