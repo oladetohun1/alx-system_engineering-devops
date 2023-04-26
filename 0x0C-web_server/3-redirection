@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Redirect to another page
+# The redirection must be a “301 Moved Permanently
 
 # Install Nginx web server
 sudo apt-get update
@@ -14,8 +15,6 @@ server {
     location /redirect_me {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
-
-    # Add other server blocks or configuration as needed
 }
 EOL"
 
@@ -24,4 +23,3 @@ sudo service nginx reload
 
 # Verify the redirection
 curl -sI http://localhost/redirect_me/
-
