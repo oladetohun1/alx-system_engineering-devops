@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Not found page (404)
 
 # Update package lists
 sudo apt-get -y update
