@@ -2,26 +2,21 @@
 # Redirect to another page
 # The redirection must be a "301 Moved Permanently"
 
-# Update package lists
-sudo apt-get -y update
-
 # Install Nginx
-sudo apt-get -y install nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 
-# Allow incoming HTTP traffic
-sudo ufw allow "Nginx HTTP"
+# Create directories and files
+sudo mkdir -p /var/www/html
+sudo chown -R $USER:$USER /var/www/html
+echo "Hello World" | sudo tee /var/www/html/index.html > /dev/null
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html > /dev/null
 
-# Create a default "Hello World" page
-echo "Hello World" | sudo tee /var/www/html/index.html
+# Configure Nginx to Redirect to another page The redirection must be a "301 Moved Permanently"
+sudo sed -i "/sever_name_;/a \\
+    \tlocation /redirect_me { \\
+    \t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4; \\
+    \t}" /etc/nginx/sites-available/default
 
-# Define the redirected URL
-redirected_url="https://www.youtube.com/watch?v=QH2-TGUlwu4"
-
-# Add a location block for redirection to Nginx configuration
-sudo sed -i "/server_name _;/a
-    location /redirect_me {
-        return 301 $redirected_url;
-    }" /etc/nginx/sites-available/default
-
-# Start Nginx service
-sudo service nginx start
+# Restart Nginx
+sudo systemctl restart nginx
