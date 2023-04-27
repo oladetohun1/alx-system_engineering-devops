@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Redirect to another page
-# The redirection must be a "301 Moved Permanently"
+# Redirect to another page the redirection must be a "301 Moved Permanently"
 
 # Install Nginx
 sudo apt-get update
