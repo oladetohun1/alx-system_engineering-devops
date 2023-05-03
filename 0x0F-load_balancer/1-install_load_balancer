@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Configure server with HAproxy
 # Distribute requests using a roundrobin algorithm
 
