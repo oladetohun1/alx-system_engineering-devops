@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
+# Set the hostname for web-01 and web-02
+sudo hostnamectl set-hostname 18996-web-01
+sudo hostnamectl set-hostname 18996-web-02
+
 # Configure server with HAproxy
 # Distribute requests using a roundrobin algorithm
 
-CONFIG="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 91997-web-01 3.85.16.98 check\n\tserver 91997-web-02 18.204.11.165 check\n"
+CONFIG="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 18996-web-01 3.85.16.98 check\n\tserver 18996-web-02 18.204.11.165 check\n"
 
 # Update package lists and install nginx and haproxy
 sudo apt-get update
@@ -18,4 +22,4 @@ sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.backup
 sudo sed -i "\$a $CONFIG" /etc/haproxy/haproxy.cfg
 
 # Start haproxy service
-sudo service haproxy start
+sudo service haproxy restart
