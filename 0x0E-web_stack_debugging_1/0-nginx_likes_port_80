@@ -1,4 +1,5 @@
 #!/bin/env bash
+# allow for nginx port 80
 
 # Start Nginx service
 sudo service nginx start
@@ -7,7 +8,9 @@ sudo service nginx start
 sudo ufw allow 80
 
 # Update Nginx configuration to listen on port 80
-sudo sed -i 's/listen 443 ssl;/listen 80;/g' /etc/nginx/sites-available/default
-
+sed -i 's/listen 8080/listen 80/g' /etc/nginx/sites-enabled/default
+sed -i 's/listen \[::\]:8080/listen \[::\]:80/g' /etc/nginx/sites-enabled/default
+pgrep nginx -o > /run/nginx.pid
 # Reload Nginx configuration
 sudo service nginx reload
+echo '' > /run/nginx.pid
