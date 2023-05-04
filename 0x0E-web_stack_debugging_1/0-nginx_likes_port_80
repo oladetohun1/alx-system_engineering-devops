@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Start Nginx service
+sudo service nginx start
+
+# Add firewall rule to allow traffic on port 80
+sudo ufw allow 80
+
+# Update Nginx configuration to listen on port 80
+sudo sed -i 's/listen 443 ssl;/listen 80;/g' /etc/nginx/sites-available/default
+
+# Reload Nginx configuration
+sudo service nginx reload
