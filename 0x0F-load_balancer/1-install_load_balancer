@@ -20,7 +20,7 @@ listen appname
     balance roundrobin
     option httpclose
     option forwardfor
-    server 81305-web-01 54.227.222.205:80 check
-    server 81305-web-02 35.174.207.8:80 check
+    server 18996-web-01 3.85.16.98:80 check
+    server 18996-web-02 18.204.11.165:80 check
 EOF
 sudo service haproxy start
