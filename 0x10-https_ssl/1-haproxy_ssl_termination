@@ -51,5 +51,5 @@ frontend https_front
 	default_backend https_back
 backend https_back
 	balance roundrobin
-	server 18996-web-01 3.85.16.98:80 check
-	server 18996-web-02 18.204.11.165:80 check
+	server 18996-web-01 3.85.16.98:443 check
+	server 18996-web-02 18.204.11.165:443 check
