@@ -17,4 +17,4 @@ then
   domain_information "$1" "$2"
 fi
 
-# Usage: ./1-world_wide_web <domain> <subdomain>
+# Usage: ./1-world_wide_web <domain> <subdomain>.
