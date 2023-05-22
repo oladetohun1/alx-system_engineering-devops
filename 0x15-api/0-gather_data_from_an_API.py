@@ -10,7 +10,6 @@ Usage:
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
     """
     The script must accept an integer as a parameter,
