@@ -34,7 +34,8 @@ if __name__ == "__main__":
 
     # Retrieve other relevant data
     employee_name = employee_data.get('name')
-    completed_tasks = [task['title'] for task in todo_data if task.get('completed')]
+    completed_tasks = [task['title'] for task in todo_data
+                       if task.get('completed')]
     num_of_done_tasks = len(completed_tasks)
     total_number_of_tasks = len(todo_data)
 
