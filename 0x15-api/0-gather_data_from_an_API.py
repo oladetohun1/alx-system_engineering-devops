@@ -12,13 +12,15 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """The script must accept an integer as a parameter,
+    """
+    The script must accept an integer as a parameter,
     which is the employee ID
     """
     if len(argv) != 2:
         print('''
         Only two arguments expected:
-        $ ./0-gather_data_from_an_API.py <employee_id>''')
+        $ ./0-gather_data_from_an_API.py <employee_id>
+        ''')
         exit(1)
     id = argv[1]
     url = "https://jsonplaceholder.typicode.com"
