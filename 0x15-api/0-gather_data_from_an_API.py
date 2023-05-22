@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A script that returns information about an employee TODO list
+"""
+A script that returns information about an employee TODO list
 progress, given its ID.
 
 Usage:
