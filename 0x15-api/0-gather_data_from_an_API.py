@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """A script that returns information about an employee TODO list
 progress, given its ID.
+
+Usage:
+    $ ./0-gather_data_from_an_API.py <employee_id>
 """
 
 import requests
