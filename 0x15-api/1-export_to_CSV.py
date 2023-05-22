@@ -22,7 +22,7 @@ if __name__ == "__main__":
         $ ./0-gather_data_from_an_API.py <employee_id>
         ''')
         exit(1)
-    employee_id = argv[1]
+    employee_id = int(argv[1])
     url = "https://jsonplaceholder.typicode.com"
     employee_url = f"{url}/users/{employee_id}"
     todos_url = f"{url}/todos?userId={employee_id}"
