@@ -39,7 +39,12 @@ if __name__ == "__main__":
 
     # Prepare CSV data
     csv_data = [
-        [employee_id, employee_username, task.get('completed'), task.get('title')]
+        [
+            employee_id,
+            employee_username,
+            task.get('completed'),
+            task.get('title')
+        ]
         for task in completed_tasks
     ]
 
@@ -47,7 +52,9 @@ if __name__ == "__main__":
     csv_filename = f"{employee_id}.csv"
     with open(csv_filename, 'w', newline='') as csv_file:
         csv_writer = csv.writer(csv_file)
-        csv_writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"])
+        csv_writer.writerow(
+            ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
+            )
         csv_writer.writerows(csv_data)
 
     print(f"Data exported to {csv_filename} successfully.")
