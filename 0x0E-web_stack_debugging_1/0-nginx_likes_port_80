@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# allow for nginx port 80
+# Debug and fix Nginx not listening on port 80 in an Ubuntu container.
 
-# Start Nginx service
-sudo apt update
-sudo apt -y install nginx
-sudo service nginx start
-# Add firewall rule to allow traffic on port 80
-sudo ufw allow 80
+# Stop the oldest Nginx instance.
+pkill -o nginx;
 
-# Update Nginx configuration to listen on port 80
-sudo sed -i 's/listen\s*80;/listen 0.0.0.0:80;/g' /etc/nginx/sites-available/default
-sudo service nginx restart
+# Remove the problematic default config file.
+rm /etc/nginx/sites-enabled/default;
+
+# Create a symbolic link to the available config file.
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default;
+
+# Restart Nginx to apply the changes.
+service nginx restart;
