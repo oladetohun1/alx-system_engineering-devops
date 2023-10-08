@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 # Run nginx as nginx and not root
 
 # Configure Nginx to run as nginx user
