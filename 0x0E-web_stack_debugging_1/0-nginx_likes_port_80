@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # allow for nginx port 80
 
-# Start Nginx service
-sudo apt update
 sudo apt -y install nginx
 sudo service nginx start
 # Add firewall rule to allow traffic on port 80
